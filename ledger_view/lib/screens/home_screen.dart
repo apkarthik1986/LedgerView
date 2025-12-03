@@ -272,10 +272,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.account_balance_wallet_outlined,
-                            size: 80,
-                            color: Colors.grey.shade300,
+                          Image.asset(
+                            'assets/images/ledger_view_logo.png',
+                            width: 120,
+                            height: 120,
                           ),
                           const SizedBox(height: 16),
                           Text(
