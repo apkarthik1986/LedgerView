@@ -45,7 +45,7 @@ class _CustomerListScreenState extends State<CustomerListScreen> {
     });
 
     try {
-      // Use the Master sheet URL directly (no need to modify gid parameter)
+      // Fetch customers directly using the configured Master sheet URL
       final customers = await CsvService.fetchCustomerData(_csvUrl!);
 
       setState(() {
