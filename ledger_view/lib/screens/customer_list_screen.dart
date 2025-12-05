@@ -114,6 +114,7 @@ class _CustomerListScreenState extends State<CustomerListScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Customer List'),
+        automaticallyImplyLeading: false,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -123,15 +124,6 @@ class _CustomerListScreenState extends State<CustomerListScreen> {
             ),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () async {
-              await Navigator.pushNamed(context, '/settings');
-              _loadSettings();
-            },
-          ),
-        ],
       ),
       body: Container(
         decoration: BoxDecoration(
