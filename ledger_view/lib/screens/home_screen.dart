@@ -118,7 +118,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('LedgerView'),
+        title: const Text('Ledger Search'),
+        automaticallyImplyLeading: false,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -128,15 +129,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () async {
-              await Navigator.pushNamed(context, '/settings');
-              _loadSettings();
-            },
-          ),
-        ],
       ),
       body: Container(
         decoration: BoxDecoration(
