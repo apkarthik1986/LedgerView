@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'screens/main_screen.dart';
 import 'screens/home_screen.dart';
-import 'screens/settings_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -66,9 +66,9 @@ class LedgerViewApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const HomeScreen(),
+      home: const MainScreen(),
       routes: {
-        '/settings': (context) => const SettingsScreen(),
+        '/ledger': (context) => const HomeScreen(),
       },
     );
   }
