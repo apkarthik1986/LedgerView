@@ -76,4 +76,8 @@ Date,Particulars,,Vch Type,Vch No.,Debit,Credit
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU General Public License v3.0 (GPLv3).
+
+You may redistribute and/or modify this program under the terms of the GNU GPL as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+See the [LICENSE](LICENSE) file for details.
